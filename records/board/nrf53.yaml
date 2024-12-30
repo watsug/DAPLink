@@ -1,0 +1,7 @@
+common:
+    sources:
+        board:
+            - source/board/nrf53.c
+        family:
+            - source/family/nordic/nrf53/target.c
+            - source/family/nordic/target_reset_nrf53.c

@@ -53,6 +53,7 @@ __WEAK const target_family_descriptor_t g_nxp_rapid_iot = {0};
 __WEAK const target_family_descriptor_t g_nxp_lpc55xx_series = {0};
 __WEAK const target_family_descriptor_t g_nordic_nrf51 = {0};
 __WEAK const target_family_descriptor_t g_nordic_nrf52 = {0};
+__WEAK const target_family_descriptor_t g_nordic_nrf53 = {0};
 __WEAK const target_family_descriptor_t g_realtek_rtl8195am = {0};
 __WEAK const target_family_descriptor_t g_renesas_family = {0};
 __WEAK const target_family_descriptor_t g_toshiba_tz_family = {0};
@@ -74,23 +75,12 @@ __WEAK const target_family_descriptor_t g_maxim_max3266x_family = {0};
 //! descriptor is not included in the link will resolve to NULL and init_family() can skip it.
 __WEAK
 const target_family_descriptor_t *g_families[] = {
-    &g_hw_reset_family,
-    &g_sw_vectreset_family,
-    &g_sw_sysresetreq_family,
-    &g_nxp_kinetis_kseries,
-    &g_nxp_kinetis_lseries,
-    &g_nxp_kinetis_vseries,
-    &g_nxp_kinetis_k32_series,
-    &g_nxp_lpc55xx_series,
-    &g_nxp_mimxrt,
-    &g_nxp_rapid_iot,
-    &g_nordic_nrf51,
-    &g_nordic_nrf52,
-    &g_realtek_rtl8195am,
-    &g_renesas_family,
-    &g_toshiba_tz_family,
-    &g_ambiq_ama3b1kk,
-    &g_maxim_max3262x_family,
+    &g_hw_reset_family,        &g_sw_vectreset_family, &g_sw_sysresetreq_family,
+    &g_nxp_kinetis_kseries,    &g_nxp_kinetis_lseries, &g_nxp_kinetis_vseries,
+    &g_nxp_kinetis_k32_series, &g_nxp_lpc55xx_series,  &g_nxp_mimxrt,
+    &g_nxp_rapid_iot,          &g_nordic_nrf51,        &g_nordic_nrf52,
+    &g_nordic_nrf53,           &g_realtek_rtl8195am,   &g_renesas_family,
+    &g_toshiba_tz_family,      &g_ambiq_ama3b1kk,      &g_maxim_max3262x_family,
     &g_maxim_max3266x_family,
     FAMILY_LIST_TERMINATOR // list terminator
 };
